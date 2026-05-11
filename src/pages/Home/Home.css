@@ -1,0 +1,8 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212; /* Dark background for the page */
+  padding: 20px;
+}
