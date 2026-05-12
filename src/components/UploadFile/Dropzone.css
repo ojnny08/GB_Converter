@@ -1,0 +1,102 @@
+/* Dropzone.css */
+
+.drop-zone {
+	border: 1.5px dashed #4e5058;
+	border-radius: 12px;
+	padding: 2.5rem 2rem;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.15s, border-color 0.15s;
+	background: #2b2d31;
+	position: relative;
+}
+
+.drop-zone.active {
+	background: #404249;
+	border-color: #5865f2;
+}
+
+.drop-zone:hover {
+	background: #35373c;
+	border-color: #6d6f78;
+}
+
+.icon-wrap {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: #1e1f22;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+	border: 1px solid #4e5058;
+	font-size: 20px;
+}
+
+.drop-zone.active .icon-wrap {
+	background: #4752c4;
+	border-color: #5865f2;
+}
+
+.drop-title {
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0 0 4px;
+	color: #f2f3f5;
+}
+
+.drop-sub {
+	font-size: 13px;
+	color: #949ba4;
+	margin: 0;
+}
+
+.open-btn {
+	margin-top: 0.75rem;
+	font-size: 13px;
+	font-weight: 500;
+	color: #00a8fc;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.open-btn:hover {
+	color: #0091da;
+}
+
+.file-list {
+	margin-top: 1rem;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.file-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 12px;
+	border-radius: 8px;
+	border: 1px solid #4e5058;
+	background: #1e1f22;
+	font-size: 13px;
+}
+
+.file-name {
+	font-weight: 500;
+	color: #f2f3f5;
+	flex: 1;
+	text-align: left;
+}
+
+.file-size {
+	color: #949ba4;
+	font-size: 12px;
+}
