@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import ConvertToTxt from '../../utils/convert'
 import './Dropzone.css'
+import { formatSize } from '../../utils/formatSize'
 
 const Dropzone = (props) => {
 	const { required, name, files, setFiles } = props
@@ -38,7 +39,7 @@ const Dropzone = (props) => {
 					{files.map(file => (
 						<li key={file.name} className='file-item'>
 							<span className='file-name'>{file.name}</span>
-							<span className='file-size'>{(file.size / 1024).toFixed(1)} KB</span>
+							<span className='file-size'>{formatSize(file.size)}</span>
 							<button onClick={() => handleDelete(file)}>✕</button>
 						</li>
 					))}
