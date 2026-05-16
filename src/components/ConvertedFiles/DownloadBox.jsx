@@ -1,10 +1,12 @@
 import './DownloadBox.css'
 import { formatSize } from '../../utils/formatSize'
+import History from '../DownloadHistory/History'
 
 const DownloadBox = ({ convertedFiles }) => {
     if (convertedFiles.length === 0) return null
 
     const handleDownloadAll = () => {
+        History(convertedFiles)
         convertedFiles.forEach((file) => {
             const a = document.createElement('a')
             a.href = file.url

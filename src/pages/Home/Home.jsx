@@ -2,11 +2,12 @@ import Dropzone from "../../components/UploadFile/Dropzone";
 import DownloadBox from "../../components/ConvertedFiles/DownloadBox";
 import ConvertToTxt from "../../utils/convert";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './Home.css';
 
-const Home = () => {
+const Home = ({ convertedFiles, setConvertedFiles }) => {
     const [files, setFiles] = useState([])
-	const [convertedFiles, setConvertedFiles] = useState([])
+	const nav = useNavigate()
 
 	const handleConvert = async (files) => {
 		const result = await ConvertToTxt(files)
@@ -20,7 +21,7 @@ const Home = () => {
             <header className="topbar">
                 <div className="topbar-logo">
                     <span className="topbar-logo-icon">⇄</span>
-                    <span className="topbar-title">FileConverter</span>
+                    <span className="topbar-title">Gardiner Roberts</span>
                 </div>
                 <nav className="topbar-nav">
                     <a href="#">Docs</a>
@@ -36,7 +37,7 @@ const Home = () => {
                             <span className="sidebar-icon">⬆</span>
                             Convert
                         </a>
-                        <a href="#" className="sidebar-item">
+                        <a className="sidebar-item" onClick={() => nav('/history')}>
                             <span className="sidebar-icon">🕐</span>
                             History
                         </a>
