@@ -1,0 +1,41 @@
+.dark {
+    --bg-primary: #313338;
+    --bg-surface: #2b2d31;
+    --bg-elevated: #1e1f22;
+    --bg-hover: #35373c;
+    --bg-active: #404249;
+
+    --border: #4e5058;
+    --border-subtle: #111214;
+    --border-hover: #6d6f78;
+
+    --accent: #5865f2;
+    --accent-hover: #4752c4;
+    --accent-active: #5865f2;
+
+    --text-primary: #f2f3f5;
+    --text-secondary: #949ba4;
+    --text-hover: #dbdee1;
+    --text-on-accent: #ffffff;
+}
+
+.light {
+    --bg-primary: #f2f3f5;
+    --bg-surface: #ebedef;
+    --bg-elevated: #e3e5e8;
+    --bg-hover: #dfe1e3;
+    --bg-active: #d7d9dc;
+
+    --border: #c4c9ce;
+    --border-subtle: #d4d7dc;
+    --border-hover: #b9bbbe;
+
+    --accent: #5865f2;
+    --accent-hover: #4752c4;
+    --accent-active: #5865f2;
+
+    --text-primary: #060607;
+    --text-secondary: #4e5058;
+    --text-hover: #2e3338;
+    --text-on-accent: #ffffff;
+}
